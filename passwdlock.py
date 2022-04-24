@@ -13,4 +13,11 @@ class User:
         A method that defines the username and password properties of users
         """
         
+        self.username = username
+        self.password = password
+        
+        
+        
+        
+        
         
