@@ -43,7 +43,12 @@ class User:
         """
         
         credentialList = []
-        
+        @classmethod
+        def check_user(cls, username, password):
+            """
+            A method for checking user existence in the userList
+
+            """
         
 
         
