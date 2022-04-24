@@ -92,6 +92,10 @@ class User:
             """
             A method to check the existence of credentials and return true or false
             """
+            for credential in cls.credentialList:
+                if credential.account_details == account_details:
+                    return True
+                return False
                 
                 
         
