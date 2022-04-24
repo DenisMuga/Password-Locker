@@ -96,6 +96,18 @@ class User:
                 if credential.account_details == account_details:
                     return True
                 return False
+            
+        @classmethod
+        def show_credentials(cls):
+            """
+            A method to display all the credential list contents
+            """
+            return cls.credentialList
+        
+        def generatePassword (stringLength=8):
+            """
+            A method to generate a random password involving letters, digits, and special characters of max length 8
+            """
                 
                 
         
