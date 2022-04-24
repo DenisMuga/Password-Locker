@@ -3,6 +3,8 @@ from os import remove
 import string
 import random
 
+from httplib2 import Credentials
+
 class User:
     """
     A user class that creates all user instances.
@@ -64,6 +66,11 @@ class User:
             self.password = password
             self.account_details = account_details
             
+        def store_credentials(self):
+            """
+            A method to save new credentials to credentialList
+            """
+            Credentials.credentialList.append(self)
         
 
         
