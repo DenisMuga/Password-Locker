@@ -11,4 +11,9 @@ class TestClass(unittest.TestCase):
         A method that executes before each test case
         """
         self.new_user = User('DenisMuga','Mu20muD5')
+    
+    def test_init (self):
+        """
+        A test case for checking the validity of properties initialization
+        """
         
