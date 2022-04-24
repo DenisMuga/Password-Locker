@@ -12,10 +12,17 @@ class TestClass(unittest.TestCase):
         """
         self.new_user = User('DenisMuga','Mu20muD5')
     
-    def test_init (self):
+    def test_init(self):
         """
         A test case for checking the validity of properties initialization
         """
         self.assertEqual(self.new_user.username, 'DenisMuga')
         self.assertEqual(self.new_user.password, 'Mu20muD5')
+        
+    def test_store_user(self):
+        """
+        A test case for checking if new user instances are saved in the userList
+        """
+        self.new_user.store_user()
+        self.assertEqual(len(User.userList),1)
         
