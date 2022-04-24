@@ -71,6 +71,12 @@ class User:
             A method to save new credentials to credentialList
             """
             Credentials.credentialList.append(self)
+            
+        def delete_credentials(self):
+            """
+            A method to delete account credentials from userList
+            """
+            Credentials.credentialList.remove(self)
         
 
         
