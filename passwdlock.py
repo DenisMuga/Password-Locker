@@ -98,16 +98,20 @@ class User:
                 return False
             
         @classmethod
+        def generatePassword (stringLength=8):
+            """
+            A method to generate a random password involving letters, digits, and special characters of max length 8
+            """
+            password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "^$%*~$#@!"
+        
+        
         def show_credentials(cls):
             """
             A method to display all the credential list contents
             """
             return cls.credentialList
         
-        def generatePassword (stringLength=8):
-            """
-            A method to generate a random password involving letters, digits, and special characters of max length 8
-            """
+        
                 
                 
         
