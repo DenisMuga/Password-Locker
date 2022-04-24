@@ -103,6 +103,9 @@ class User:
             A method to generate a random password involving letters, digits, and special characters of max length 8
             """
             password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "^$%*~$#@!"
+            return ''.join(random.choice(password) for i in range(stringLength))
+            
+            
         
         
         def show_credentials(cls):
