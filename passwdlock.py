@@ -78,6 +78,12 @@ class User:
             """
             Credentials.credentialList.remove(self)
         
+        @classmethod
+        def verify_credential(cls, account):
+            """
+            A method that uses account name to return matching credential
+            """
+        
 
         
     
