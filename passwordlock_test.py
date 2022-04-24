@@ -16,4 +16,6 @@ class TestClass(unittest.TestCase):
         """
         A test case for checking the validity of properties initialization
         """
+        self.assertEqual(self.new_user.username, 'DenisMuga')
+        self.assertEqual(self.new_user.password, 'Mu20muD5')
         
