@@ -26,3 +26,8 @@ class TestClass(unittest.TestCase):
         self.new_user.store_user()
         self.assertEqual(len(User.userList),1)
         
+class TestCredentials(unittest.TestCase):
+    """
+    A test class for defining credentials test cases
+    """
+        
