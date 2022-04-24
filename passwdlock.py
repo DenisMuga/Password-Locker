@@ -23,6 +23,10 @@ class User:
         User.userList.append(self)
         
         
+    @classmethod
+    
+        
+        
         
         
         
