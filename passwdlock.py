@@ -1,3 +1,4 @@
+from collections import UserList
 from os import remove
 import string
 import random
@@ -47,8 +48,13 @@ class User:
         def check_user(cls, username, password):
             """
             A method for checking user existence in the userList
-
             """
+            
+            app_user = ''
+            for user in UserList:
+                if (user.username == username and user.userpassword == password):
+                    app_user = user.username
+            return app_user
         
 
         
