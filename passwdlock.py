@@ -15,6 +15,12 @@ class User:
         
         self.username = username
         self.password = password
+    
+    def  store_user(self):
+        """
+        A method to store user instances into the userList
+        """
+        User.userList.append(self)
         
         
         
