@@ -105,9 +105,6 @@ class User:
             password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "^$%*~$#@!"
             return ''.join(random.choice(password) for i in range(stringLength))
             
-            
-        
-        
         def show_credentials(cls):
             """
             A method to display all the credential list contents
