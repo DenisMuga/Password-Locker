@@ -58,8 +58,11 @@ class User:
         
         def __init__(self,user_name, password, account_details):
             """
-            A method defining users credentilas properties to be saved
+            A method defining users credentiials properties to be saved
             """
+            self.user_name = user_name
+            self.password = password
+            self.account_details = account_details
             
         
 
