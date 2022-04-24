@@ -7,3 +7,10 @@ class User:
     """
     
     userList = []
+    
+    def __init__(self, username, password):
+        """
+        A method that defines the username and password properties of users
+        """
+        
+        
