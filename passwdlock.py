@@ -24,6 +24,8 @@ class User:
         
         
     @classmethod
+    def show_user(cls):
+        return cls.userList
     
         
         
