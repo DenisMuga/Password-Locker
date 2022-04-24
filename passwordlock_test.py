@@ -30,4 +30,9 @@ class TestCredentials(unittest.TestCase):
     """
     A test class for defining credentials test cases
     """
+    def setUp(self):
+        """
+        A method that executes before each test case
+        """
+        
         
