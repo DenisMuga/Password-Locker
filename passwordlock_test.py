@@ -1,5 +1,5 @@
 import unittest
-from passwdlock import Users
+from passwdlock import User
 from passwdlock import Credentials
 
 class TestClass(unittest.TestCase):
@@ -10,4 +10,5 @@ class TestClass(unittest.TestCase):
         """
         A method that executes before each test case
         """
+        self.new_user = User('DenisMuga','Mu20muD5')
         
