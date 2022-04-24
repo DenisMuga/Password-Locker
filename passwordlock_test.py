@@ -6,3 +6,8 @@ class TestClass(unittest.TestCase):
     """
     A test class for various User Class test cases
     """
+    def setUp(self):
+        """
+        A method that executes before each test case
+        """
+        
