@@ -83,5 +83,18 @@ def passwordlocker():
         username = input("User_name: ")
         while True:
             print("TP = Type Own Password: \n GP = Generate Random Password")
+            pwdChoice = input("").lower().strip()
+            if pwdChoice == 'tp':
+                password = input("Enter Password\n")
+                break
+            elif pwdChoice == 'gp':
+                password = generatePassword()
+                break
+            else:
+                print("Wrong Password, Please Try Again")
+        store_user(create_new_user(username,password))
+        print("-" *100)
+        print(f"Hello {username}, You successfully created an Account: Your Password is: {password}")
+        print("-" * 100)
     
 
