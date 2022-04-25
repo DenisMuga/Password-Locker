@@ -79,6 +79,23 @@ class TestCredentials(unittest.TestCase):
         self.new_credential.delete_credentials()
         self.assertEqual(len(Credentials.credentialList),1)
         
+    def test_verify_credential(self):
+        """
+        A test case to check if it's possible to display credentials account details using account name search
+        """
+        
+        self.new_credential.store_credentials()
+        test_credential = Credentials("Facebook", "denismuga", "Jd12klx8")
+        test_credential.store_credentials()
+        
+        the_credential = Credentials.verify_credential("Facebook")
+        
+        self.assertEqual(the_credential.account_details, test_credential.account_details)
+        
+
+        
+        
+        
         
         
         
