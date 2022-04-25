@@ -4,4 +4,10 @@ from passwdlock import User, Credentials
 def function():
     print("PASSWORD LOCKER")
 function()
+
+def create_new_user(username, password):
+    """
+    A function to create a new user with username and passowrd properties
+    """
+    
     
