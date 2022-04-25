@@ -48,5 +48,14 @@ class TestCredentials(unittest.TestCase):
         """
         A test case to check if objects in the credentials are saved in the credentialList
         """
+        self.new_credential.store_credentials()
+        self.assertEqual(len(Credentials.credentialList),1)
+        
+    def tearDown(self):
+        """
+        A test case to clean up after each test case has run.
+        """
+        
+        Credentials.credentialList = []
         
         
