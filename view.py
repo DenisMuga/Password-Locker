@@ -60,4 +60,10 @@ def verify_credential(account_details):
     A function that uses account name to find credentials and returns credentials of that particular account
     """
     return Credentials.verify_credential(account_details)
+
+def credential_existence(account_details):
+    """
+    A function that checks if a credential exists with a particular account name and return True or False
+    """
+    return Credentials.if_credential_existence(account_details)
     
