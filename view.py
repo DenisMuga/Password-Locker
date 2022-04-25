@@ -73,3 +73,7 @@ def generatePassword():
     rand_password = Credentials.generatePassword()
     return rand_password
     
+    
+def passwordlocker():
+    print("Welcome To Personal Accounts Locker. \n To proceed, Enter: \n CA=Create Account \n LG=Have Account \n")
+passwordlocker()
