@@ -42,6 +42,7 @@ def store_credentials(credentials):
     A function to store credentials to the credentialList
     """
     credentials.store_credentials()
+    
 def delete_credentials(credentials):
     """
     A function to delete credentials form credentialList
@@ -53,4 +54,10 @@ def show_acc_details():
     A function to display all saved credentials
     """
     return Credentials.show_credentials()
+
+def verify_credential(account_details):
+    """
+    A function that uses account name to find credentials and returns credentials of that particular account
+    """
+    return Credentials.verify_credential(account_details)
     
