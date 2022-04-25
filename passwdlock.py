@@ -62,9 +62,9 @@ class User:
             """
             A method defining users credentiials properties to be saved
             """
+            self.account_details = account_details
             self.user_name = user_name
             self.password = password
-            self.account_details = account_details
             
         def store_credentials(self):
             """

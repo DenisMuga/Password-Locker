@@ -34,5 +34,14 @@ class TestCredentials(unittest.TestCase):
         """
         A method that executes before each test case
         """
+        self.new_credential = Credentials('Gmail', 'Denis_Muga', 'Mx20mcD7')
+        
+    def test_init(self):
+        """
+        A test case to verify if new instances of credentials are correctly initialized
+        """
+        self.assertEqual(self.new_credential.account_details,'Gmail')
+        self.assertEqual(self.new_credential.user_name, 'Denis_Muga')
+        self.assertEqual(self.new_credential.password, 'Mx20mcD7')
         
         
