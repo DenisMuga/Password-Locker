@@ -149,7 +149,18 @@ def passwordlocker():
                 
             else:
                 print("The Credential Does Not Exist For Deletion")
-        elif
+        elif user_choice == "gp":
+            password = generatePassword()
+            print(f"{password} Has Been Successfully Generated! Proceed to Use It in Your Account")
+        elif user_choice == "ex":
+            print("Thank You For Using Password Locker!! See You Later!!")
+            break
+        else:
+            print("Wrong Entry! Please Check Menu Entries and Match!")
+            
+if __name__ == '__main__':
+    passwordlocker()
+            
                 
         
 
