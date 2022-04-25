@@ -42,3 +42,10 @@ def store_credentials(credentials):
     A function to store credentials to the credentialList
     """
     credentials.store_credentials()
+    
+def show_acc_details():
+    """
+    A function to display all saved credentials
+    """
+    return Credentials.show_credentials()
+    
