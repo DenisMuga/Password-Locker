@@ -88,9 +88,23 @@ class TestCredentials(unittest.TestCase):
         test_credential = Credentials("Facebook", "denismuga", "Jd12klx8")
         test_credential.store_credentials()
         
-        the_credential = Credentials.verify_credential("Facebook")
+        my_credential = Credentials.verify_credential("Facebook")
         
-        self.assertEqual(the_credential.account_details, test_credential.account_details)
+        self.assertEqual(my_credential.account_details, test_credential.account_details)
+        
+    def test_credential_existence(self):
+        """
+        A test case to check if we can return True or False booleans based on existence or non-existence of credentials
+        """
+        self.new_credential.store_credentials()
+        my_credential = Credentials("Facebook", "denismuga", "Jd12klx8")
+        my_credential.store_credentials()
+        
+        found_credential = Credentials.if_credential_existence("Facebook")
+        self.assertTrue(found_credential)
+        
+        
+        
         
 
         
