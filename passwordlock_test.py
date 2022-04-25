@@ -67,6 +67,20 @@ class TestCredentials(unittest.TestCase):
         test_credential.store_credentials()
         self.assertEqual(len(Credentials.credentialList),2)
         
+    def test_delete_credentials(self):
+        """
+        A test case to check if we can remove credentials from credentialList
+        """
+        
+        self.new_credential.store_credentials()
+        test_credential = Credentials("Facebook", "denismuga", "Jd12klx8")
+        test_credential.store_credentials()
+        
+        self.new_credential.delete_credentials()
+        self.assertEqual(len(Credentials.credentialList),1)
+        
+        
+        
         
         
         
