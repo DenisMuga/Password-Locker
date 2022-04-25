@@ -36,3 +36,9 @@ def create_new_credential(account_details,user_name, password):
     """
     new_credential = Credentials(account_details,user_name, password)
     return new_credential
+
+def store_credentials(credentials):
+    """
+    A function to store credentials to the credentialList
+    """
+    credentials.store_credentials()
