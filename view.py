@@ -105,8 +105,10 @@ def passwordlocker():
         login = login_user(username, password)
         if login_user == login:
             print(f"Hello {username}. Welcome to Password Locker Manger")
-            print("\n")
+            print('\n')
     while True:
+        print("Please Use These Short Codes:\n CNC = Create a New Credential \n DC = Display Credentials \n FC = Find a New Credential \n GP=Generate Random Password \n DD = Delete Credential \n = Exit the Application \n")
+        
         
 
             
