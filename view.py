@@ -30,3 +30,9 @@ def login_user(username, password):
     """
     find_user = Credentials.check_user(username, password)
     return find_user
+def create_new_credential(account_details,user_name, password):
+    """
+    A function to create new credentials for each user account
+    """
+    new_credential = Credentials(account_details,user_name, password)
+    return new_credential

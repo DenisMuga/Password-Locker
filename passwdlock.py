@@ -58,7 +58,7 @@ class User:
                     app_user = user.username
             return app_user
         
-        def __init__(self,user_name, password, account_details):
+        def __init__(self,account_details,user_name, password):
             """
             A method defining users credentiials properties to be saved
             """
