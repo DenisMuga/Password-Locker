@@ -128,6 +128,33 @@ def passwordlocker():
                 else:
                     print("Invalid Password Please: Try Again!")
             store_credentials(create_new_credential(account_details, user_name, password))
+            print("\n")
+            print(f"Account Credential for {account_details}, User name: {user_name}, Passwor: {password} is successfully created")
+            print("\n")
+        elif user_choice == "dc":
+            if show_acc_details():
+                print(f"Account: {account_details.account_details} \n User name: {user_name} \n Password: {password}")
+                print("-" * 40)
+                print("-" * 40)
+            else:
+                print("None of Your Credentials Saved!")
+        elif user_choice == "DD":
+            print("Enter Account Name for the Credentials You Want to Delete")
+            search_name = input().lower()
+            if verify_credential(search_name):
+                get_credential = verify_credential(search_name)
+                print("-" * 60)
+                get_credential.delete_credentials()
+                print("\n")
+                
+            else:
+                print("The Credential Does Not Exist For Deletion")
+        elif
+                
+        
+
+                
+                
 
                     
             
