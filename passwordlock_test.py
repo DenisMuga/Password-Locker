@@ -103,6 +103,18 @@ class TestCredentials(unittest.TestCase):
         found_credential = Credentials.if_credential_existence("Facebook")
         self.assertTrue(found_credential)
         
+    def test_show_all_stored_credentials(self):
+        """
+        A test case to display all credentials stored by the user
+        """
+        
+        self.assertEqual(Credentials.show_credentials(), Credentials.credentialList)
+        
+    if __name__ == "_main_":
+        unittest.main()
+        
+    
+        
         
         
         
