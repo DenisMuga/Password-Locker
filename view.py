@@ -42,6 +42,11 @@ def store_credentials(credentials):
     A function to store credentials to the credentialList
     """
     credentials.store_credentials()
+def delete_credentials(credentials):
+    """
+    A function to delete credentials form credentialList
+    """
+    credentials.delete_credentials()
     
 def show_acc_details():
     """
