@@ -58,4 +58,16 @@ class TestCredentials(unittest.TestCase):
         
         Credentials.credentialList = []
         
+    def test_store_many_account_details(self):
+        """
+        A test case to check if we can store many credentials account objects to credentialList
+        """
+        self.new_credential.store_credentials()
+        test_credential = Credentials("Facebook", "denismuga", "Jd12klx8")
+        test_credential.store_credentials()
+        self.assertEqual(len(Credentials.credentialList),2)
+        
+        
+        
+        
         
