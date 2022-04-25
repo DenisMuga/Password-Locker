@@ -76,4 +76,12 @@ def generatePassword():
     
 def passwordlocker():
     print("Welcome To Personal Accounts Locker. \n To proceed, Enter: \n CA=Create Account \n LG=Have Account \n")
-passwordlocker()
+    user_choice = input("").lower().strip()
+    if user_choice == "ca":
+        print("Sign Up")
+        print('-' * 60)
+        username = input("User_name: ")
+        while True:
+            print("TP = Type Own Password: \n GP = Generate Random Password")
+    
+
