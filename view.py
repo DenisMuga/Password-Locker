@@ -9,5 +9,7 @@ def create_new_user(username, password):
     """
     A function to create a new user with username and passowrd properties
     """
+    new_user = User(username, password)
+    return new_user
     
     
