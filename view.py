@@ -96,5 +96,19 @@ def passwordlocker():
         print("-" *100)
         print(f"Hello {username}, You successfully created an Account: Your Password is: {password}")
         print("-" * 100)
+    elif user_choice == "lg":
+        print("-" * 60)
+        print("To Login, Enter Username and Password:")
+        print("-" * 50)
+        username = input("User Name: ")
+        password = input("Password: ")
+        login = login_user(username, password)
+        if login_user == login:
+            print(f"Hello {username}. Welcome to Password Locker Manger")
+            print("\n")
+    while True:
+        
+
+            
     
 
