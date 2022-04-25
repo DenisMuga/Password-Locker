@@ -16,4 +16,17 @@ def store_user(user):
     """
     A function to store a new user
     """
-    user.store_user()
+    User.store_user()
+    
+def show_user():
+    """
+    A function that shows an existing user
+    """
+    return User.show_user()
+
+def login_user(username, password):
+    """
+    A function to check if  users exist and logs them in
+    """
+    find_user = Credentials.check_user(username, password)
+    return find_user
